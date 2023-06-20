@@ -26,7 +26,7 @@ int main(int argc, char** argv)
 	std::string save_folder = "./line_lbd/data";
 
 	/* get parameters from comand line */
-	FileStorage fs2("/home/hu/CLionProjects/cubeSLAM_without_ros/line_lbd/test_config.yaml", FileStorage::READ);
+	FileStorage fs2("~/cubeSLAM_without_ros/line_lbd/test_config.yaml", FileStorage::READ);
 	fs2["image_path"] >> image_path;
 	save_folder = (std::string)fs2["save_folder"];
 	bool use_LSD_algorithm = (int)fs2["use_LSD_algorithm"] != 0;
